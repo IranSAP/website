@@ -1,0 +1,21 @@
+body{
+  margin:0;
+  font-family:Inter, system-ui;
+  background:#F8FAFC;
+  color:#0F172A;
+}
+
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 32px;
+}
+
+section{
+  padding:100px 0;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:50px;
+}
