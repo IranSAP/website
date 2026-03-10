@@ -36,12 +36,46 @@ font-size:20px;
 color:#475569;
 }
 
+/* STEP 1 (buttons layout) */
+
 .buttons{
 margin-top:30px;
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+}
+
+/* STEP 3 */
+
+.primary,
+.secondary{
+display:inline-block;
+}
+
+/* STEP 2 (mobile fix) */
+
+@media (max-width:600px){
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.buttons{
+flex-direction:column;
+align-items:center;
 }
 
 .buttons a{
-margin-right:10px;
+width:100%;
+max-width:260px;
+text-align:center;
+}
+
 }
 
 </style>
