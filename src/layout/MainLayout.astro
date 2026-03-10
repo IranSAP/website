@@ -4,55 +4,104 @@ const { title } = Astro.props;
 
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
 
-<MainLayout title="Iransap | Preparing the SAP Ecosystem in Iran">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>{title}</title>
+
+<meta name="description" content="Iransap – Preparing the future SAP ecosystem in Iran. Connecting engineers, consultants, and businesses interested in enterprise technologies." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style is:global>
+
+*{
+box-sizing:border-box;
+}
+
 body{
-  margin:0;
-  font-family:Inter, system-ui;
-  background:#F8FAFC;
-  color:#0F172A;
+margin:0;
+font-family:Inter, system-ui, -apple-system, sans-serif;
+background:#F8FAFC;
+color:#0F172A;
+line-height:1.6;
 }
 
 .container{
-  max-width:1100px;
-  margin:0 auto;
-  padding:0 32px;
-}
-
-h1,h2,h3{
-  margin:0;
+max-width:1100px;
+margin:0 auto;
+padding:0 32px;
 }
 
 section{
-  padding:100px 0;
+padding:100px 0;
 }
 
-section h2{
-  text-align:center;
-  font-size:36px;
+h1,h2,h3{
+margin:0;
+}
+
+h2{
+font-size:36px;
+text-align:center;
+margin-bottom:50px;
+}
+
+p{
+color:#475569;
 }
 
 .primary{
-  background:#0A6ED1;
-  color:white;
-  padding:14px 28px;
-  border-radius:8px;
-  text-decoration:none;
+background:#0A6ED1;
+color:white;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:500;
+transition:0.2s;
+}
+
+.primary:hover{
+background:#085bb0;
 }
 
 .secondary{
-  border:1px solid #0A6ED1;
-  padding:14px 28px;
-  border-radius:8px;
-  text-decoration:none;
+border:1px solid #0A6ED1;
+color:#0A6ED1;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:500;
 }
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+margin-top:50px;
+text-align:center;
+}
+
+@media (max-width:600px){
+
+section{
+padding:70px 0;
+}
+
+h2{
+font-size:28px;
+}
+
+.container{
+padding:0 20px;
+}
+
+}
+
 </style>
 
 </head>
@@ -62,4 +111,5 @@ section h2{
 <slot />
 
 </body>
+
 </html>
