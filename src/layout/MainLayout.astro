@@ -1,14 +1,25 @@
 ---
-const { title } = Astro.props;
+const { title, langData = { lang: "en", dir: "ltr" } } = Astro.props
 ---
 
-<html lang="en">
+<html lang={langData.lang} dir={langData.dir}>
 <head>
 
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
+<style>
+
+body{
+font-family: "Vazirmatn", sans-serif;
+margin:0;
+}
+
+</style>
 
 <title>{title}</title>
+
+</head>
 
 <meta name="description" content="Iransap – Preparing the future SAP ecosystem in Iran. Connecting engineers, consultants, and businesses interested in enterprise technologies." />
 
