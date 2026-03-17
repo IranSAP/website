@@ -8,9 +8,14 @@ import CTA from "../../components/CTA.astro"
 import Footer from "../../components/Footer.astro"
 import Mission from "../../components/Mission.astro"
 import AboutSAP from "../../components/AboutSAP.astro"
+import de from "../../i18n/de.js"
+
 ---
 
-<MainLayout title="Iran SAP Ecosystem">
+<AboutSAP t={de} />
+---
+
+<MainLayout title="Iran SAP Ecosystem" langData={de}>
 
 <Hero />
 <AboutSAP />
