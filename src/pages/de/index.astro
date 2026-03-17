@@ -1,11 +1,23 @@
 ---
 import MainLayout from "../../layout/MainLayout.astro"
+
+import Hero from "../../components/Hero.astro"
+import Features from "../../components/Feature.astro"
+import Roadmap from "../../components/RoadMap.astro"
+import CTA from "../../components/CTA.astro"
+import Footer from "../../components/Footer.astro"
+import Mission from "../../components/Mission.astro"
 import AboutSAP from "../../components/AboutSAP.astro"
-import de from "../../i18n/de.js"
 ---
 
-<MainLayout title="Iransap | SAP Ökosystem im Iran">
+<MainLayout title="Iran SAP Ecosystem">
 
-<AboutSAP t={de} />
+<Hero />
+<AboutSAP />
+<Mission />
+<Features />
+<Roadmap />
+<CTA />
+<Footer />
 
 </MainLayout>

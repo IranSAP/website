@@ -1,23 +1,36 @@
 ---
-import MainLayout from "../layout/MainLayout.astro"
-
-import Hero from "../components/Hero.astro"
-import Features from "../components/Feature.astro"
-import Roadmap from "../components/RoadMap.astro"
-import CTA from "../components/CTA.astro"
-import Footer from "../components/Footer.astro"
-import Mission from "../components/Mission.astro"
-import AboutSAP from "../components/AboutSAP.astro"
 ---
 
-<MainLayout title="Iran SAP Ecosystem">
+<!DOCTYPE html>
+<html>
+<head>
 
-<Hero />
-<AboutSAP />
-<Mission />
-<Features />
-<Roadmap />
-<CTA />
-<Footer />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</MainLayout>
+<title>Iransap</title>
+
+<script>
+
+const lang = navigator.language;
+
+if (lang.startsWith("de")) {
+  window.location.href = "/de";
+}
+else if (lang.startsWith("fa")) {
+  window.location.href = "/fa";
+}
+else {
+  window.location.href = "/de";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<p>Redirecting...</p>
+
+</body>
+</html>
